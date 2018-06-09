@@ -11,8 +11,17 @@ function initMap() {
 	});
 }
 
-// Form Data	
+// Form Handling	
 $('button').on('click', (e) => {
-	console.log('Go Button Clicked')
+
+	// stop the page from refreshing on click
 	e.preventDefault();
+
+	// grab inputs from the page
+	const latitude = document.getElementById('latitude').value;
+	const longitude = document.getElementById('longitude').value;
+	const zoom = document.getElementById('zoom').value;
+
+	// show us that the inputs are correct
+	console.log('Button Clicked! Latitude: ' + latitude + ' Longitude: ' + longitude + ' Zoom: ' + zoom);
 })
