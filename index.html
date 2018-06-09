@@ -7,16 +7,24 @@
     <meta charset="utf-8">
 </head>
 <body>
-	<!-- create a div element to hold the map -->
-	<div id='map'></div>
+	<!-- form for user data -->
+	<form id='userInput'>
+		<div> Latitude: 
+			<input class ='inputParam' id='latitude' type='text' />
+		</div>
 
-	<form>
-		<input id='latitude'>Latitude</input>
-		<input id='longitude'>Longitude</input>
-		<input id='zoom'>Zoom</input>
+		<div> Longitude: 
+			<input class ='inputParam' id='longitude'type='text' />
+		</div>
+
+		<div> Zoom:
+			<input class ='inputParam' id='zoom' type='text' />
+		</div>
 		<button>Go</button>
 	</form>
 
+	<!-- create a div element to hold the map -->
+	<div id='map'></div>
 
 <!-- link jQuery before javascript -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
