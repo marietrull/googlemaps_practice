@@ -10,3 +10,9 @@ function initMap() {
 		zoom: 8
 	});
 }
+
+// Form Data	
+$('button').on('click', (e) => {
+	console.log('Go Button Clicked')
+	e.preventDefault();
+})
