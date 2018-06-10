@@ -39,15 +39,6 @@ $('button').on('click', (e) => {
 	
 	// place marker based on user's input
 
-	// 41.8781, lng: -87.6298
-
-	initMap();
-
-	var marker = new google.maps.Marker({
-		position: myLatLng,
-		map: map,
-		title: 'Hello World!'
-	});
 
 })
 
